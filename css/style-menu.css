@@ -172,3 +172,40 @@ h1{
     color: #ffffff;
     text-shadow: 0px 5px 5px #00000080; 
 }
+
+/* ***** Footer ***** */
+
+footer {
+    background-color: #1d1d1b;
+    color: #ffffff;
+}
+
+#social li {
+    display:inline;
+}
+
+a {
+    text-decoration: none;
+}
+
+.social-icon {
+    color: #ffffff;
+}
+
+.social-icon:hover {
+    color: #78BF00;
+}
+
+#derechos {
+    font-size: 14px;
+    color: #a7a7a7 /* Mismo color que #avisoPriv */
+}
+
+#avisoPriv {
+    
+    color: #a7a7a7; /* Mismo color que #derechos */
+}
+
+#avisoPriv:hover {
+    color: #fff;
+}
