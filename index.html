@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="icon" href="./assets/icon.png" type="image/png">
+
+    <title>Alimentos y Bebidas</title>
+</head>
+<body>
+
+    <!-- Modal -->
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content" style="background-color: transparent; border: 1px solid transparent">
+            <div class="modal-body">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="background-color: #ffffff; float: right; margin-bottom: 1rem;"></button>
+              <img src="./assets/img/poster.jpg" alt="" srcset="" style="width: 100%; border-radius: 30px; box-shadow: 0px 5px 5px #00000080">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img id="logo" src="./assets/img/logotipo-codere-green-mob.svg">
+        </a>
+
+        <div class="row " >
+            <div class="col-12 text-center">
+                <h1 id="title-bienvenido">¡Bienvenido!</h1>
+            </div>
+        </div>
+
+        <div class="row justify-content-center text-center">
+            <div class="col-lg-12">
+
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide slide1">
+                            <h1 id="cat1" class="card-text" value="desayuno">
+                                <a href="desayuno.html" target="_blank" style="color: white; text-decoration: none">DESAYUNO</a>
+                            </h1>
+                        </div>
+                        <div class="swiper-slide slide1">
+                            <h1 id="cat2" class="card-text" value="comida">
+                                <a href="comida.html" target="_blank" style="color: white; text-decoration: none">COMIDA</a>
+                            </h1>
+                        </div>
+                        <div class="swiper-slide slide1">
+                            <h1 id="cat3" class="card-text" value="cena">
+                                <a href="extras.html" target="_blank" style="color: white; text-decoration: none">CENA</a>
+                            </h1>
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row justify-content-center text-center">
+            <div class="col-lg-12 col-sm-12">
+                <p id="legal">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores delectus quaerat, corporis quam debitis perferendis voluptatem repudiandae consectetur voluptatum facilis soluta nemo necessitatibus iure nostrum rem ipsam reiciendis fugiat maxime.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/70e2dea142.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script>
+    var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        spaceBetween: 50,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 0,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: false,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+
+</body>
+</html>
