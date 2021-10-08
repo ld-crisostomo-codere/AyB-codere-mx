@@ -1,5 +1,15 @@
+window.onload = function () {
+  $('#onload').hide();
+  $('body').removeClass('hidden');
+  AOS.init();
 
-AOS.init();
+  setTimeout( function(){
+    promModal.show();
+  }, 500);
+
+}
+
+
 
 let promModal = new bootstrap.Modal(document.getElementById('exampleModal'))
 let catSelect = '';
@@ -10,10 +20,6 @@ let cat3 = document.querySelector('#cat3');
 cat1.addEventListener("click", catSelected);
 cat2.addEventListener("click", catSelected);
 cat3.addEventListener("click", catSelected);
-
-$( document ).ready(function() {
-  promModal.show();
-});
 
 function catSelected() {
   catSelect = this.value;
