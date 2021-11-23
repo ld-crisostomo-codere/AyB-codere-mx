@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/style-menu.css">
+
+    <link rel="icon" href="./assets/icon.png" type="image/png">
+
+    <title>Comidas</title>
+</head>
+<body class="hidden">
+
+    <!-- PreLoader -->
+    <div id="onload" class="centrado">
+        <img src="./assets/logos/codere-logo.svg" alt="" id="logoPreloader" class="me-2">
+        <div class="lds-ripple"><div></div><div></div></div>
+    </div>
+
+    <header class="hidden2">
+        <!-- Navbar -->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <div class="container" data-aos="fade-down" data-aos-duration="1000">
+                <a class="navbar-brand" href="index.html">
+                    <!-- <i id="iconComida" class="fas fa-utensils me-2"></i>
+                    <img id="logo" class="" src="./assets/logos/CodereClub-blanco.svg" alt=""> -->
+                    <span id="textMenu"><i class="fas fa-utensils me-1"></i> Menú</span>
+                </a>
+                <button
+                    class="navbar-toggler collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                    <span class="toggler-icon top-bar"></span>
+                    <span class="toggler-icon middle-bar"></span>
+                    <span class="toggler-icon bottom-bar"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="mx-auto"></div>
+                    <ul class="navbar-nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="desayuno.html">Desayunos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="comida.html">Comidas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="bebidas.html">Bebidas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="extras.html">Postres</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container-fluid">
+
+
+        <section class="" id="slideProm" >
+                <div class="row justify-content-center text-center">
+                    <div class="col-lg-12">
+        
+                        <!-- Swiper -->
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide slide2 shadow-4">
+                                    <img src="./assets/img/promo2.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide slide2 shadow-4">
+                                    <img src="./assets/img/promo3.jpg" alt="">
+                                </div>
+                                <!-- <div class="swiper-slide slide2 shadow-4">
+                                    <img src="./assets/img/promo.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide slide2 shadow-4">
+                                    <img src="./assets/img/promo.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide slide2 shadow-4">
+                                    <img src="./assets/img/promo.jpg" alt="">
+                                </div> -->
+                            </div>
+        
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+        
+                    </div>
+                </div>
+        </section>
+
+        <section id="sectionComida" class="shadow-4">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="title-section">ENTRADAS</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+            <div class="row mt-5 mb-5">
+                <div class="col-6 mt-2 mb-2" data-aos="zoom-in">
+                    <div class="row">
+                        <div class="col-8">
+                            <h4 class="nombre">NACHOS TRÉBOL </h4>
+                        </div>
+                        <div class="col-4">
+                            <h4 class="precio" style="float: right;">$55</h4>
+                        </div>
+                    </div>
+                    <p>Orden de totopos (210gr) bañados de frijoles refritos (80gr), con queso tipo cheddar y salsa mexicana.</p>
+                </div>
+                <div class="col-6 mt-2 mb-2" data-aos="zoom-in">
+                    <div class="row">
+                        <div class="col-8">
+                            <h4>NACHOS DIAMANTE </h4>
+                        </div>
+                        <div class="col-4">
+                            <h4 class="precio" style="float: right;">$64</h4>
+                        </div>
+                    </div>
+                    <p>Orden de totopos (200gr) bañados dr frijoles refritos (50gr), con queso tipo cheddar (60gr) y arrachera (120gr).</p>
+                </div>
+                <div class="col-6 mt-2 mb-2" data-aos="zoom-in">
+                    <div class="row">
+                        <div class="col-8">
+                            <h4>ALITAS NAIPE </h4>
+                        </div>
+                        <div class="col-4">
+                            <h4 class="precio" style="float: right;">$78</h4>
+                        </div>
+                    </div>
+                    <p>Orden de alitas (500gr), acompañados de crudites, bañadas en salsa búfalo acompañadas de aderezo ranch.</p>
+                </div>
+                <div class="col-6 mt-2 mb-2" data-aos="zoom-in">
+                    <div class="row">
+                        <div class="col-8">
+                            <h4>GRINGA BINGO </h4>
+                        </div>
+                        <div class="col-4">
+                            <h4 class="precio" style="float: right;">$79</h4>
+                        </div>
+                    </div>
+                    <p>Gringas de tortilla de harina con queso gouda, rellenas de carne al pastor (180gr) acompañadas de guacamole, cebollas cambray, chiles toreados y limón.</p>
+                </div>
+                <div class="col-6 mt-2 mb-2" data-aos="zoom-in">
+                    <div class="row">
+                        <div class="col-8">
+                            <h4>PAPAS DOMINO </h4>
+                        </div>
+                        <div class="col-4">
+                            <h4 class="precio" style="float: right;">$58</h4>
+                        </div>
+                    </div>
+                    <p>Papas a la francesa (500gr) fritas a la prefección servidas con queso amarillo.</p>
+                </div>
+            </div>
+        </div>
+
+        <section id="sectionComida" class="shadow-4">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="title-section">ENSALADAS</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+            <div class="row mt-5 mb-5">
+                <div class="col-6 mt-2 mb-2" data-aos="zoom-in">
+                    <div class="row">
+                        <div class="col-8">
+                            <h4>CESAR SLOT </h4>
+                        </div>
+                        <div class="col-4">
+                            <h4 class="precio" style="float: right;">$63</h4>
+                        </div>
+                    </div>
+                    <p>Jugosa pechuga de pollo (200gr) servida sobre lechuga larga, mezclada con aderezo cesar, gratinada con queso gouda y crotones.</p>
+                </div>
+                <div class="col-6 mt-2 mb-2" data-aos="zoom-in">
+                    <div class="row">
+                        <div class="col-8">
+                            <h4>ENSALADA WIN</h4>
+                        </div>
+                        <div class="col-4">
+                            <h4 class="precio" style="float: right;">$70</h4>
+                        </div>
+                    </div>
+                    <p>La especial de jugosa pechuga empanizada sobre cama de lechuga fresca, granos de elote amarillo, jitomate, aguacate y crotones, acompañada de aderezo ranch.</p>
+                </div>
+                <div class="col-6 mt-2 mb-2" data-aos="zoom-in">
+                    <div class="row">
+                        <div class="col-8">
+                            <h4>ENSALADA PÓKER</h4>
+                        </div>
+                        <div class="col-4">
+                            <h4 class="precio" style="float: right;">$63</h4>
+                        </div>
+                    </div>
+                    <p>Atún mezclado (130gr) con 50gr de verduras primavera (elote, zanahoria, papa y chicharo) acompañada de ensalada fresca, huevo cocido y aguacate.</p>
+                </div>
+                <div class="col-6 mt-2 mb-2" data-aos="zoom-in">
+                    <div class="row">
+                        <div class="col-8">
+                            <h4>ENSALADA TEXAS</h4>
+                        </div>
+                        <div class="col-4">
+                            <h4 class="precio" style="float: right;">$78</h4>
+                        </div>
+                    </div>
+                    <p>Arrachera (150gr) servida sobre lechuga larga, queso gouda, cebolla morada, jitomate y crotones.</p>
+                </div>
+                <div class="col-6 mt-2 mb-2" data-aos="zoom-in">
+                    <div class="row">
+                        <div class="col-8">
+                            <h4>ENSALADA BLACKJACK</h4>
+                        </div>
+                        <div class="col-4">
+                            <h4 class="precio" style="float: right;">$75</h4>
+                        </div>
+                    </div>
+                    <p>Pollo a la plancha (180gr), servida con lechuga, jamón de pavo (60gr), huevo cocido, queso gouda (60gr).</p>
+                </div>
+            </div>
+        </div>
+
+        <section id="sectionComida" class="shadow-4">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="title-section">SOPAS</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+            <div class="row mt-5 mb-5">
+                <div class="col-6 mt-2 mb-2" data-aos="zoom-in">
+                    <div class="row">
+                        <div class="col-8">
+                            <h4>CALDO BACCARAT (CALDO DE POLLO) </h4>
+                        </div>
+                        <div class="col-4">
+                            <h4 class="precio" style="float: right;">$49</h4>
+                        </div>
+                    </div>
+                    <p>Consomé de pollo (330ml) con pollo codio (70gr), verduras cocidas, arroz blanco, acompañado de chile serrano, juliana de tortilla frita, y 30gr de queso panela.</p>
+                </div>
+                <div class="col-6 mt-2 mb-2" data-aos="zoom-in">
+                    <div class="row">
+                        <div class="col-8">
+                            <h4>SOPA 777 (SOPA AZTECA)</h4>
+                        </div>
+                        <div class="col-4">
+                            <h4 class="precio" style="float: right;">$49</h4>
+                        </div>
+                    </div>
+                    <p>Sopa de tortilla (330ml) acompañado de julianas de tortilla frita, chicharrón, queso panela (30gr), crema y chile pasilla.</p>
+                </div>
+            </div>
+        </div>
+
+        <section id="sectionComida" class="shadow-4">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="title-section">ESPECIALIDADES</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+            <div class="row mt-5 mb-5">
+                <div class="col-6 mt-2 mb-2" data-aos="zoom-in">
+                    <div class="row">
+                        <div class="col-8">
+                            <h4>TAMPIQUEÑA CORONA DEL REY </h4>
+                        </div>
+                        <div class="col-4">
+                            <h4 class="precio" style="float: right;">$129</h4>
+                        </div>
+                    </div>
+                    <p> Arrachera marinada (200gr), servida con guacamole, rajas con crema, arroz y frijol, acompañada de chiles toreados.</p>
+                </div>
+                <div class="col-6 mt-2 mb-2" data-aos="zoom-in">
+                    <div class="row">
+                        <div class="col-8">
+                            <h4>RULETA TAMPIQUEÑA </h4>
+                        </div>
+                        <div class="col-4">
+                            <h4 class="precio" style="float: right;">$94</h4>
+                        </div>
+                    </div>
+                    <p> Pechuga a la plancha (200gr), servida con guacamole, rajas con crema, arroz y frijol, acompañada de chiles toreados y cebollitas cambray.</p>
+                </div>
+                <div class="col-6 mt-2 mb-2" data-aos="zoom-in">
+                    <div class="row">
+                        <div class="col-8">
+                            <h4>PESCADO EMPERADOR </h4>
+                        </div>
+                        <div class="col-4">
+                            <h4 class="precio" style="float: right;">$79</h4>
+                        </div>
+                    </div>
+                    <p> Filete de pescado empanizado (350gr), acompañado de enesalada fresca, papas a la francesa (100gr) y guacamole.</p>
+                </div>
+                <div class="col-6 mt-2 mb-2" data-aos="zoom-in">
+                    <div class="row">
+                        <div class="col-8">
+                            <h4>PECHUGA BONUS </h4>
+                        </div>
+                        <div class="col-4">
+                            <h4 class="precio" style="float: right;">$78</h4>
+                        </div>
+                    </div>
+                    <p> Pechuga a la plancha (20gr), acompañada de ensalada fresca, papas a la francesa (100gr) y guacamole.</p>
+                </div>
+            </div>
+        </div>
+
+        <section id="sectionComida" class="shadow-4">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="title-section">ANTOJITOS MEXICANOS</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+            <div class="row mt-5 mb-5">
+                <div class="col-6 mt-2 mb-2" data-aos="zoom-in">
+                    <div class="row">
+                        <div class="col-8">
+                            <h4>ENCHILADAS EGIPCIAS </h4>
+                        </div>
+                        <div class="col-4">
+                            <h4 class="precio" style="float: right;">$68</h4>
+                        </div>
+                    </div>
+                    <p> 5 ricas enchiladas rellenas de pollo (200gr) bañadas en salsa verde, 40gr de queso panela y crema acompañadas de frijoles refritos.</p>
+                </div>
+                <div class="col-6 mt-2 mb-2" data-aos="zoom-in">
+                    <div class="row">
+                        <div class="col-8">
+                            <h4>ENCHILADAS POSEIDÓN </h4>
+                        </div>
+                        <div class="col-4">
+                            <h4 class="precio" style="float: right;">$68</h4>
+                        </div>
+                    </div>
+                    <p> 5 ricas enchiladas rellenas de pollo (200gr) gratinadas con queso gouda, bañadas en salsa verde.</p>
+                </div>
+                <div class="col-6 mt-2 mb-2" data-aos="zoom-in">
+                    <div class="row">
+                        <div class="col-8">
+                            <h4>ENCHILADAS MAGIC BONUS </h4>
+                        </div>
+                        <div class="col-4">
+                            <h4 class="precio" style="float: right;">$75</h4>
+                        </div>
+                    </div>
+                    <p> 5 ricas enchiladas rellenas arrachera (200gr) bañadas en salsa roja, con 40gr de queso panela y crema acompañadas de frijoles refritos.</p>
+                </div>
+                <div class="col-6 mt-2 mb-2" data-aos="zoom-in">
+                    <div class="row">
+                        <div class="col-8">
+                            <h4>TACOS GOLDEN </h4>
+                        </div>
+                        <div class="col-4">
+                            <h4 class="precio" style="float: right;">$55</h4>
+                        </div>
+                    </div>
+                    <p> 4 taco dorados rellenos de pollo servidos con lechuga romana, jitomate, con queso panela y crema.</p>
+                </div>
+            </div>
+        </div>
+
+        <section id="sectionComida" class="shadow-4">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="title-section">ENTREPANES</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+            <div class="row mt-5 mb-5">
+                <div class="col-6 mt-2 mb-2" data-aos="zoom-in">
+                    <div class="row">
+                        <div class="col-8">
+                            <h4>HAMBURGUESA BOOK </h4>
+                        </div>
+                        <div class="col-4">
+                            <h4 class="precio" style="float: right;">$90</h4>
+                        </div>
+                    </div>
+                    <p> Carne de res (200gr) servida con queso gouda (30gr) jamón de pavo (30gr) cebolla y piña caramelizadas, verduras frescas y papa a la francesa (20gr).</p>
+                </div>
+                <div class="col-6 mt-2 mb-2" data-aos="zoom-in">
+                    <div class="row">
+                        <div class="col-8">
+                            <h4>HAMBURGUESA JAMÓN Y QUESO </h4>
+                        </div>
+                        <div class="col-4">
+                            <h4 class="precio" style="float: right;">$82</h4>
+                        </div>
+                    </div>
+                    <p> Carne de res (200gr), servida con queso gouda (30gr) tocino (15gr), verduras frescas y papa a la francesa (200gr).</p>
+                </div>
+                <div class="col-6 mt-2 mb-2" data-aos="zoom-in">
+                    <div class="row">
+                        <div class="col-8">
+                            <h4>CHILI DOG COFRE </h4>
+                        </div>
+                        <div class="col-4">
+                            <h4 class="precio" style="float: right;">$42</h4>
+                        </div>
+                    </div>
+                    <p> Hot dog con salchicha de pavo (120gr) gratinado con queso gouda (40gr) carne molida (50gr) queso amarillo y papa a la francesa (150gr).</p>
+                </div>
+                <div class="col-6 mt-2 mb-2" data-aos="zoom-in">
+                    <div class="row">
+                        <div class="col-8">
+                            <h4>SANDWICH ROYAL </h4>
+                        </div>
+                        <div class="col-4">
+                            <h4 class="precio" style="float: right;">$90</h4>
+                        </div>
+                    </div>
+                    <p> Arrachera (100gr) cebolla y champiñones asados, tocinoy queso gouda servido con papas a la francesa.</p>
+                </div>
+                <div class="col-6 mt-2 mb-2" data-aos="zoom-in">
+                    <div class="row">
+                        <div class="col-8">
+                            <h4>CASINO CLUB SANDWICH </h4>
+                        </div>
+                        <div class="col-4">
+                            <h4 class="precio" style="float: right;">$78</h4>
+                        </div>
+                    </div>
+                    <p> Pechuga de pollo (100gr), queso gouda, jamón de pavo, cebolla y lechuga fresca, acompañado de papas a la francesa.</p>
+                </div>
+            </div>
+        </div>
+
+        <section id="sectionComida" class="shadow-4">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="title-section">EXTRAS</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+            <div class="row mt-5 mb-5">
+                <div class="col-6 mt-2 mb-2" data-aos="zoom-in">
+                    <div class="row">
+                        <div class="col-8">
+                            <h4>AGUACATE </h4>
+                        </div>
+                        <div class="col-4">
+                            <h4 class="precio" style="float: right;">$20</h4>
+                        </div>
+                    </div>
+                    <p></p>
+                </div>
+                <div class="col-6 mt-2 mb-2" data-aos="zoom-in">
+                    <div class="row">
+                        <div class="col-8">
+                            <h4>GUACAMOLE </h4>
+                        </div>
+                        <div class="col-4">
+                            <h4 class="precio" style="float: right;">$20</h4>
+                        </div>
+                    </div>
+                    <p></p>
+                </div>
+                <div class="col-6 mt-2 mb-2" data-aos="zoom-in">
+                    <div class="row">
+                        <div class="col-8">
+                            <h4>QUESO AMARILLO </h4>
+                        </div>
+                        <div class="col-4">
+                            <h4 class="precio" style="float: right;">$15</h4>
+                        </div>
+                    </div>
+                    <p></p>
+                </div>
+                <div class="col-6 mt-2 mb-2" data-aos="zoom-in">
+                    <div class="row">
+                        <div class="col-8">
+                            <h4>ARROZ BLANCO </h4>
+                        </div>
+                        <div class="col-4">
+                            <h4 class="precio" style="float: right;">$15</h4>
+                        </div>
+                    </div>
+                    <p></p>
+                </div>
+                <div class="col-6 mt-2 mb-2" data-aos="zoom-in">
+                    <div class="row">
+                        <div class="col-8">
+                            <h4>FRIJOLES </h4>
+                        </div>
+                        <div class="col-4">
+                            <h4 class="precio" style="float: right;">$10</h4>
+                        </div>
+                    </div>
+                    <p></p>
+                </div>
+                <div class="col-6 mt-2 mb-2" data-aos="zoom-in">
+                    <div class="row">
+                        <div class="col-8">
+                            <h4>PAPAS A LA FRANCESA </h4>
+                        </div>
+                        <div class="col-4">
+                            <h4 class="precio" style="float: right;">$15</h4>
+                        </div>
+                    </div>
+                    <p></p>
+                </div>
+                <div class="col-6 mt-2 mb-2" data-aos="zoom-in">
+                    <div class="row">
+                        <div class="col-8">
+                            <h4>CHILES TOREADOS </h4>
+                        </div>
+                        <div class="col-4">
+                            <h4 class="precio" style="float: right;">$10</h4>
+                        </div>
+                    </div>
+                    <p></p>
+                </div>
+                <div class="col-6 mt-2 mb-2" data-aos="zoom-in">
+                    <div class="row">
+                        <div class="col-8">
+                            <h4>TORTILLA DE MAÍZ </h4>
+                        </div>
+                        <div class="col-4">
+                            <h4 class="precio" style="float: right;">$15</h4>
+                        </div>
+                    </div>
+                    <p></p>
+                </div>
+                <div class="col-6 mt-2 mb-2" data-aos="zoom-in">
+                    <div class="row">
+                        <div class="col-8">
+                            <h4>TORTILLA DE HARINA </h4>
+                        </div>
+                        <div class="col-4">
+                            <h4 class="precio" style="float: right;">$15</h4>
+                        </div>
+                    </div>
+                    <p></p>
+                </div>
+                <div class="col-6 mt-2 mb-2" data-aos="zoom-in">
+                    <div class="row">
+                        <div class="col-8">
+                            <h4>QUESO PANELA </h4>
+                        </div>
+                        <div class="col-4">
+                            <h4 class="precio" style="float: right;">$15</h4>
+                        </div>
+                    </div>
+                    <p></p>
+                </div>
+                <div class="col-6 mt-2 mb-2" data-aos="zoom-in">
+                    <div class="row">
+                        <div class="col-8">
+                            <h4>SALSA VERDE O ROJA </h4>
+                        </div>
+                        <div class="col-4">
+                            <h4 class="precio" style="float: right;">$5</h4>
+                        </div>
+                    </div>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--Footer-->
+    <footer class="page-footer">
+
+        <div class="container">
+            <div class="row justify-content-center text-center" style="display: flex; align-items: center;">
+                <div class="col-3" >
+                    <img id="logoYak" class="rounded mx-auto d-block" src="./assets/logos/Yak.svg" alt="" >
+                </div>
+                <div class="col-3" >
+                    <img id="logoCCodere" class="rounded mx-auto d-block" src="./assets/logos/CasinoCodere.svg" alt="" >
+                </div>
+                <div class="col-3" >
+                    <img id="logoRYak" class="rounded mx-auto d-block" src="./assets/logos/RoyalYak.png" alt="" >
+                </div>
+                <div class="col-3" >
+                    <img id="logoJackPot" class="rounded mx-auto d-block" src="./assets/logos/JackPot.png" alt="" >
+                </div>
+            </div>
+
+            <div class="row justify-content-center text-center">
+
+                <div class="col-lg-12 mt-3">
+                    <p id="txt-siguenos">¡Síguenos en nuestras redes sociales!</p>
+                    <img id="imgLogoCodere" src="./assets/logos/codere-logo.svg" alt="">
+                </div>
+
+                <div class="col-lg-12 mt-4">
+                    <a href="https://twitter.com/Yak_MX" target="_blank" class="me-3 redSociales">
+                        <!-- <img src="./assets/icons/twitter-brands.svg" alt="" class="social-icon" style="width: 27px;"> -->
+                        <i class="fab fa-twitter social-icon fa-2x"></i>
+                    </a>
+
+                    <a href="https://www.facebook.com/YakMexico/" target="_blank" class="me-3 redSociales">
+                        <!-- <img src="./assets/icons/facebook-f-brands.svg" alt="" class="social-icon" style="width: 14px;"> -->
+                        <i class="fab fa-facebook-f social-icon fa-2x"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/yakmexico/?hl=es" target="_blank" class="me-3 redSociales">
+                        <!-- <img src="./assets/icons/instagram-brands.svg" alt="" class="social-icon" style="width: 24px;"> -->
+                        <i class="fab fa-instagram social-icon fa-2x"></i>
+                    </a>
+                </div>
+
+                <div class="col-lg-12 mt-4">
+                    <p id="derechos"><a id="avisoPriv" href="https://crm.codere.com/mexico/Media/TEMPLATES-MAILING/Aviso%20de%20Privacidad%20Club%20Codere%20CODERE%20MEXICO.pdf" target="_blank">AVISO DE PRIVACIDAD DEL CLUB</a>  |  Todos los derechos reservados por Codere ©</p>
+                </div>
+
+            </div>
+
+            <!--Copyright-->
+            <div id="footer-2" class="footer-copyright">
+                <div class="row justify-content-center text-center">
+                    <div class="col-12">
+                        <img id="pleca" src="./assets/plecas/pleca_codere2021.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <!--/.Copyright-->
+        </div>
+        <!--/.Footer Links-->
+
+    
+    </footer>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/70e2dea142.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+</body>
+</html>

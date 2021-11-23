@@ -19,7 +19,7 @@
 
     <!-- PreLoader -->
     <div id="onload" class="centrado">
-        <img src="./assets/logos/codere-logo.svg" alt="" class="me-2">
+        <img src="./assets/logos/codere-logo.svg" alt="" id="logoPreloader" class="me-2">
         <div class="lds-ripple"><div></div><div></div></div>
     </div>
 
@@ -29,18 +29,26 @@
           <div class="modal-content" style="background-color: transparent; border: 1px solid transparent">
             <div class="modal-body">
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="background-color: #ffffff; float: right; margin-bottom: 1rem;"></button>
-              <img src="./assets/img/poster.jpg" alt="" srcset="" style="width: 100%; border-radius: 30px; box-shadow: 0px 5px 5px #00000080">
+                <img src="./assets/img/poster.jpg" alt="" srcset="" style="width: 100%; border-radius: 30px; box-shadow: 0px 5px 5px #00000080">
             </div>
           </div>
         </div>
       </div>
 
     <div class="container">
-        <a class="navbar-brand" href="#">
-            <img id="logo" src="./assets/img/logotipo-codere-green-mob.svg">
-        </a>
 
-        <div class="row " >
+        <div class="row">
+            <!-- <div class="col-5">
+                <a class="navbar-brand" href="#">
+                    <img id="logo" src="./assets/logos/CodereClub-blanco.svg">
+                </a>
+            </div> -->
+            <div class="col-12">
+                <span id="textMenu"><i class="fas fa-utensils me-2"></i> Menú - Alimentos y Bebidas</span>
+            </div>
+        </div>
+
+        <div class="row mt-4" >
             <div class="col-12 text-center">
                 <h1 id="title-bienvenido">¡Bienvenido!</h1>
             </div>
@@ -52,19 +60,24 @@
                 <!-- Swiper -->
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide slide slide-desayuno">
+                        <div id="slideDesayunos" class="swiper-slide slide slide-desayuno">
                             <h1 id="cat1" class="card-text" value="desayuno">
                                 <a href="desayuno.html" style="color: white; text-decoration: none">DESAYUNOS</a>
                             </h1>
                         </div>
-                        <div class="swiper-slide slide slide-comida">
+                        <div id="slideComidas" class="swiper-slide slide slide-comida">
                             <h1 id="cat2" class="card-text" value="comida">
                                 <a href="comida.html" style="color: white; text-decoration: none">COMIDAS</a>
                             </h1>
                         </div>
-                        <div class="swiper-slide slide slide-extras">
-                            <h1 id="cat3" class="card-text" value="cena">
-                                <a href="extras.html" style="color: white; text-decoration: none">EXTRAS</a>
+                        <div id="slideBebidas" class="swiper-slide slide slide-bebidas">
+                            <h1 id="cat3" class="card-text" value="bebida">
+                                <a href="bebidas.html" style="color: white; text-decoration: none">BEBIDAS</a>
+                            </h1>
+                        </div>
+                        <div id="slideExtras" class="swiper-slide slide slide-extras">
+                            <h1 id="cat4" class="card-text" value="cena">
+                                <a href="extras.html" style="color: white; text-decoration: none">POSTRES</a>
                             </h1>
                         </div>
 
@@ -77,9 +90,12 @@
             </div>
         </div>
 
-        <div class="row justify-content-center text-center">
-            <div class="col-lg-12 col-sm-12">
-                <p id="legal">** Las imágenes son meramente ilustrativas **</p>
+        <div class="row justify-content-center mt-4 mb-2">
+            <div class="col-6">
+                <p id="legal">Las imágenes son meramente ilustrativas. Los gramajes de los alimentos son en crudo. El término de la carne es reponsabilidad del cliente (avise a su jefe de la sala). Todos nuestros precios incluyen IVA. Si al pagar NO recibe su ticket, este será de cortesía.</p>
+            </div>
+            <div class="col-6">
+                <img id="logo" src="./assets/logos/CodereClub-blanco.svg">
             </div>
         </div>
 
@@ -96,7 +112,7 @@
     <script>
     var swiper = new Swiper(".mySwiper", {
         effect: "coverflow",
-        spaceBetween: 50,
+        spaceBetween: 35,
         centeredSlides: true,
         slidesPerView: "auto",
         coverflowEffect: {

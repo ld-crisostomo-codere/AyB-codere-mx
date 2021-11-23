@@ -4,6 +4,14 @@
     font-family: 'Roboto', cursive;
 }
 
+.hidden {
+    overflow: hidden;
+}
+
+.hidden2 {
+    display: none;
+}
+
 /* ***** Navbar Animation ***** */
 
 /* Remove border from toggler */
@@ -24,7 +32,6 @@
     width: 30px;
     height: 3px;
     background-color: #78BF00;
-
     display: block;
     transition: all 0.2s;
 }
@@ -68,7 +75,7 @@
 
 /* Color of Toggler when collapsed */
 .navbar-toggler.collapsed .toggler-icon {
-    background-color: #ffffff;
+    background-color: #78BF00;
 }
 
 .shadow-4{
@@ -79,9 +86,18 @@
     box-shadow: 0px 5px 5px #00000080;
 }
 
+#iconComida{
+    font-size: 45px;
+}
+
 #logo {
-    width: 12%;
-    margin: 40px 0px;
+    width: 45%;
+    margin: 0;
+}
+
+#textMenu {
+    font-size: 30px; 
+    color: #ffffff; 
 }
 
 h1{
@@ -92,6 +108,9 @@ h1{
     width: 100%;
     padding-top: 124px;
     padding-bottom: 40px;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
 }
 
 .slide2 {
@@ -100,10 +119,6 @@ h1{
   }
 
   .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-
     /* Center slide text vertically */
     display: -webkit-box;
     display: -ms-flexbox;
@@ -173,6 +188,18 @@ h1{
     justify-content: center;
 }
 
+#sectionBebidas{
+    background-image: url("../assets/img/card-bebidas.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}
+
 #sectionExtras{
     background-image: url("../assets/img/card-extras.jpg");
     background-attachment: fixed;
@@ -193,6 +220,12 @@ h1{
 .title-section {
     font-weight: 400;
     font-size: 60px;
+    color: #ffffff;
+    text-shadow: 0px 5px 5px #00000080; 
+}
+
+.subtitle-section {
+    font-weight: 400;
     color: #ffffff;
     text-shadow: 0px 5px 5px #00000080; 
 }
@@ -252,31 +285,170 @@ a {
     position: relative;
     width: 80px;
     height: 80px;
-  }
-  .lds-ripple div {
-    position: absolute;
-    border: 4px solid #75BE43; /*Color de preloader*/
+}
+.lds-ripple div {
+position: absolute;
+border: 4px solid #75BE43; /*Color de preloader*/
+opacity: 1;
+border-radius: 50%;
+animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+.lds-ripple div:nth-child(2) {
+animation-delay: -0.5s;
+}
+
+@keyframes lds-ripple {
+0% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
     opacity: 1;
-    border-radius: 50%;
-    animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
-  }
-  .lds-ripple div:nth-child(2) {
-    animation-delay: -0.5s;
-  }
-  @keyframes lds-ripple {
-    0% {
-      top: 36px;
-      left: 36px;
-      width: 0;
-      height: 0;
-      opacity: 1;
+}
+100% {
+    top: 0px;
+    left: 0px;
+    width: 72px;
+    height: 72px;
+    opacity: 0;
+}
+}
+
+.precio {
+    margin-right: 1rem;
+}
+
+#txt-siguenos {
+font-size: 24px;
+}
+
+#logoYak {
+    width: 40%;
+    margin-top: 1rem;
+}
+
+#logoCCodere {
+    width: 60%;
+    margin-top: 1rem;
+}
+
+#logoRYak {
+    width: 50%;
+    margin-top: 1rem;
+}
+
+#logoJackPot {
+    width: 60%;
+    margin-top: 1rem;
+}
+
+.txt-modificaciones {
+    font-size: 14px;
+    text-align: justify;
+    font-weight: 300;
+}
+
+
+  /* Mobile Devices */
+  @media (max-width: 576px) {
+
+    #logoPreloader {
+       width: 40%;
     }
-    100% {
-      top: 0px;
-      left: 0px;
-      width: 72px;
-      height: 72px;
-      opacity: 0;
+
+    #iconComida{
+        font-size: 30px;
     }
-  }
-  
+
+    #logo {
+    width: 30%;
+    margin: 0;
+    }
+
+    #textMenu {
+        font-size: 22px; 
+        color: #ffffff; 
+    }
+
+    .swiper {
+        width: 100%;
+        padding-top: 80px;
+        padding-bottom: 20px;
+    }
+
+    .swiper-button-next, .swiper-button-prev {
+        display: none;
+    }
+
+    #sectionExtras, #sectionComida, #sectionDesayuno, #sectionBebidas {
+        height: 90px;
+    }
+
+    .title-section {
+        font-weight: 400;
+        font-size: 30px;
+        color: #ffffff;
+        text-shadow: 0px 5px 5px #00000080; 
+    }
+    
+    .subtitle-section {
+        font-weight: 400;
+        color: #ffffff;
+        text-shadow: 0px 5px 5px #00000080; 
+    }
+
+    h4 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 10px;
+    }
+
+    .precio {
+        margin-right: 0;
+    }
+
+    #txt-siguenos {
+        font-size: 16px;
+     } 
+
+    #imgLogoCodere {
+        width: 30%;
+    }
+    
+    .redSociales {
+        font-size: 12px;
+    }
+
+    #derechos {
+        font-size: 12px;
+    }
+
+    #pleca {
+        width: 100%;
+    }
+
+    #logoYak {
+        width: 70%;
+    }
+    
+    #logoCCodere {
+        width: 90%;
+    }
+    
+    #logoRYak {
+        width: 80%;
+    }
+    
+    #logoJackPot {
+        width: 90%;
+    }
+
+    .txt-modificaciones {
+        font-size: 11px;
+        text-align: justify;
+        font-weight: 300;
+    }
+    
+  } 
