@@ -106,7 +106,7 @@ h1{
 
 .swiper {
     width: 100%;
-    padding-top: 124px;
+    padding-top: 110px;
     padding-bottom: 40px;
     text-align: center;
     font-size: 18px;
@@ -372,8 +372,8 @@ font-size: 24px;
 
     .swiper {
         width: 100%;
-        padding-top: 80px;
-        padding-bottom: 20px;
+        padding-top: 68px;
+        padding-bottom: 10px;
     }
 
     .swiper-button-next, .swiper-button-prev {
