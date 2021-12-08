@@ -4,7 +4,7 @@
     font-family: 'Roboto', cursive;
 }
 body {
-    background-image: url("../assets/img/back.jpg");
+    background-image: url("../imagenes/img/back.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -59,7 +59,7 @@ h1{
 }
 
 .slide-desayuno {
-    background-image: url("../assets/img/card-desayuno.jpg");
+    background-image: url("../imagenes/img/card-desayuno.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 12%;
@@ -67,7 +67,7 @@ h1{
 }
 
 .slide-comida {
-    background-image: url("../assets/img/card-comida.jpg");
+    background-image: url("../imagenes/img/card-comida.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 12%;
@@ -75,7 +75,7 @@ h1{
 }
 
 .slide-bebidas {
-    background-image: url("../assets/img/card-bebidas.jpg");
+    background-image: url("../imagenes/img/card-bebidas.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 40% 12%;
@@ -83,7 +83,7 @@ h1{
 }
 
 .slide-extras {
-    background-image: url("../assets/img/card-extras.jpg");
+    background-image: url("../imagenes/img/card-extras.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 12%;
