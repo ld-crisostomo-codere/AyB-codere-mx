@@ -165,7 +165,7 @@ h1{
 }
 
 #sectionDesayuno {
-    background-image: url("../assets/img/card-desayuno.jpg");
+    background-image: url("../imagenes/img/card-desayuno.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -177,7 +177,7 @@ h1{
 }
 
 #sectionComida{
-    background-image: url("../assets/img/card-comida.jpg");
+    background-image: url("../imagenes/img/card-comida.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -189,7 +189,7 @@ h1{
 }
 
 #sectionBebidas{
-    background-image: url("../assets/img/card-bebidas.jpg");
+    background-image: url("../imagenes/img/card-bebidas.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -201,7 +201,7 @@ h1{
 }
 
 #sectionExtras{
-    background-image: url("../assets/img/card-extras.jpg");
+    background-image: url("../imagenes/img/card-extras.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
