@@ -170,7 +170,7 @@ h1{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 200px;
+    height: 150px;
     display: flex; 
     align-items: center; 
     justify-content: center;
@@ -182,7 +182,7 @@ h1{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 200px;
+    height: 150px;
     display: flex; 
     align-items: center; 
     justify-content: center;
@@ -194,7 +194,7 @@ h1{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 200px;
+    height: 150px;
     display: flex; 
     align-items: center; 
     justify-content: center;
@@ -206,7 +206,7 @@ h1{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 200px;
+    height: 150px;
     display: flex; 
     align-items: center; 
     justify-content: center;
@@ -228,6 +228,7 @@ h1{
     font-weight: 400;
     color: #ffffff;
     text-shadow: 0px 5px 5px #00000080; 
+    font-size: 25px;
 }
 
 /* ***** Footer ***** */
@@ -381,20 +382,22 @@ font-size: 24px;
     }
 
     #sectionExtras, #sectionComida, #sectionDesayuno, #sectionBebidas {
-        height: 90px;
+        height: 40px;
     }
 
     .title-section {
         font-weight: 400;
-        font-size: 30px;
+        font-size: 18px;
         color: #ffffff;
         text-shadow: 0px 5px 5px #00000080; 
+        margin-top: 0.25em;
     }
     
     .subtitle-section {
         font-weight: 400;
         color: #ffffff;
         text-shadow: 0px 5px 5px #00000080; 
+        font-size: 11px;
     }
 
     h4 {
